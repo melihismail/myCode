@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #a30606;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  
+   
+}
+
+#healthSection p {
+    margin: 10px 0;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+   
+
+}
+
+@keyframes example {
+    from {background-color: #45a049;}
+    to {background-color: #333;}
+    
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px 0 0 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #666;
+}
+
+#healthbarcontainer {
+    background-color: red;
+    height: 30px;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#health-bar {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    transition: width 0.5s linear;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#enemyhealthbarcontainer {
+    width: 300px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    position: relative;
+}
+
+#enemy-health-bar {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s linear;
+    
+}
+
+#hit-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px; /* Same as the height of the health bar */
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+    transition: font-size 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    font-size: 10px ;
+}
+.show {
+    font-size: 30px !important;
+    opacity: 1 !important;
+}
